@@ -52,6 +52,10 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 // Routes
 //___________________
 //localhost:3000
+// controller
+const productsController = require('./controllers/products.js');
+app.use('/products/', productsController);
+
 app.get('/' , (req, res) => {
   res.send('The Website is Working!');
 });
