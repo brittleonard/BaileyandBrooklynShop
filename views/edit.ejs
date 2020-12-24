@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="/css/main.css">
+      <title>Edit Products</title>
+   </head>
+   <body>
+      <h1>Edit Products</h1>
+      <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+         Name: <input type="text" name="name" value="<%=product.name%> "/><br/>
+         Image: <input type="text" name="img" value="<%=product.img%>" /><br />
+         Description: <input type="text" name="Description" value="<%=product.description%> "/><br/>
+         Quantity: <input type="text" name="quantity" value="<%=product.quantity%>"/><br/>
+         <input type="submit" value="Submit Changes">
+      </form>
+      <nav>
+         <a id="nav" href="/products">Back to Main</a></br>
+         <a id="nav" href="/products/new">Customize a Onsie</a><br/>
+      </nav>
+   </body>
+</html>

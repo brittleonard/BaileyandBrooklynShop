@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="/css/main.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Product</title>
+   </head>
+   <body>
+      <h1>Product Page</h1>
+      <h3><%=product.name%></h3></br>
+            <img src="<%=product.img%>"/></br>
+            <p id="show"><%=product.description%></p></br>
+            <p id="show">$<%=product.price%></p></br>
+
+               <% if (product.quantity > 0) { %>
+               <p id="show"><%=product.quantity%> available!</p>
+               <%  } else { %>
+                  <p id="show">Out of Stock</p>
+               <% } %>
+               <% if (product.quantity > 0) { %>
+               </br>
+                  <form action="/products/buy/<%=product.id%>?_method=PUT" method="POST">
+                    <input type="submit" onclick="alert()" value="Buy" />
+                  </form>
+                  <form action="/products/<%=product.id%>/edit">
+                    <input type="submit" value="Edit Item">
+                  </form>
+                  <% } %>
+                  <form action="/products/<%=product.id%>?_method=DELETE" method="POST">
+                     <input type="submit" value="Delete"/>
+                  </form>
+      <nav>
+         <a id="nav" href="/products">Back to Main</a></br>
+         <a id="nav" href="/products/new">Customize a Onsie</a><br/>
+      </nav>
+   </body>
+</html>
+
+
+<!-- maybe show product details and a larger image of the product -->

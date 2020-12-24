@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <link rel="stylesheet" href="/css/main.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Create a Product</title>
+   </head>
+   <body>
+       <h1>Customize Your Own</h1>
+       <form action="/products" method="POST">
+          <fieldset class="item-info">
+
+             <label for="name">Name</label>
+             <input type="text" name="name" placeholder="my Onsie name"/></br>
+
+             <label for="description">Description</label>
+             <input type="text" name="description" placeholder="Size, color, ."/></br>
+
+             <label for="img">Image</label>
+             <input type="text" name="img" placeholder="Image URL (preferred)"/></br>
+
+             <label for="price">Price</label>
+             <input type="text" name="price" placeholder="$"/></br>
+
+             <label for="quantity">Quantity</label>
+             <input type="text" name="quantity" placeholder="# of items in inventory"/></br>
+
+             <input type="submit" value="Submit Customization Request">
+         </fieldset>
+       </form>
+       <nav>
+          <a id="nav" href="/products">Back to Main</a></br>
+       </nav>
+   </body>
+</html>
+<!-- customize your own!  -->

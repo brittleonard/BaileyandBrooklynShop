@@ -1,0 +1,28 @@
+* {
+   background-color: linen;
+
+}
+body{
+   align-items: center;
+   text-align: center;
+}
+img {
+   width: 80%;
+   border-radius: 2%;
+}
+.photos {
+   outline: floralwhite;
+   outline-style: solid;
+   outline-width: 10px;
+   border-radius: 3%;
+   background-color: white;
+}
+h1 {
+   text-align: center;
+}
+.logo {
+   display: inline-grid;
+   height: 10em;
+   width: auto;
+
+}
