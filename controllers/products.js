@@ -69,21 +69,21 @@ router.get('/:id/edit', (req, res) => {
 // PUT
 router.put('/:id', (req, res) => {
   Product.findByIdAndUpdate(req.params.id, req.body, {new:true}, (error, foundProduct) => {
-      res.redirect('/products');
+      res.redirect('/home');
   })
 })
 
 // POST
 router.post('/', (req, res) => {
     Product.create(req.body, (error, createdProduct) => {
-        res.redirect('/products');
+        res.redirect('/home');
     });
 });
 
 // BUY
 router.put('/buy/:id', (req, res) => {
    Product.findByIdAndUpdate(req.params.id, {$inc: {qty: -1}}, {new: true}, (error, editInventory) => {
-      res.redirect('/products')
+      res.redirect('/home')
    });
 });
 
@@ -100,7 +100,7 @@ router.get('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
     Product.findByIdAndRemove(req.params.id, (error, data) => {
     });
-    res.redirect('/products');
+    res.redirect('/home');
 });
 
 
