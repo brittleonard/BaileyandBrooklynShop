@@ -76,7 +76,7 @@ router.put('/:id', (req, res) => {
 // POST
 router.post('/', (req, res) => {
     Product.create(req.body, (error, createdProduct) => {
-        res.redirect('/home');
+        res.redirect('/products');
     });
 });
 

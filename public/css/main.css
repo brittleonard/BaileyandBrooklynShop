@@ -1,5 +1,5 @@
 * {
-   background-color: linen;
+   background-color: #fff;
 
 }
 body{
@@ -29,7 +29,18 @@ h1 {
    width: auto;
 
 }
-
+a {
+   text-decoration: none;
+   padding-left: 25px;
+}
+#nav-bar {
+   background-color: #455a64; /*  light pink - #dcc4be  */
+   color: #fff;
+   padding: 1.5em;
+}
+.pages {
+   color: black;
+}
 p{
    width: 25%;
    align-items: center;
