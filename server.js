@@ -42,7 +42,7 @@ app.use(express.static('public'));
 
 // populates req.body with parsed info from forms - if no data from forms will return an empty object {}
 app.use(express.urlencoded({ extended: false }));// extended: false - does not allow nested objects in query strings
-app.use(express.json());// returns middleware that only parses JSON - may or may not need it depending on your project
+app.use(express.json());// returns middleware that only parses JSON - may or may not need it depending on your project.
 
 //use method override
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
@@ -60,7 +60,7 @@ const homePage = require('./controllers/homepage.js');
 app.use('/home/', homePage);
 
 app.get('/' , (req, res) => {
-  res.send('The Website is Working!');
+  res.render('./controllers/app.js');
 });
 
 //___________________

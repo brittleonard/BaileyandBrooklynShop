@@ -1,6 +1,9 @@
+
+
 const express = require('express');
 const router = express.Router();
 const Product = require('../models/products.js')
+
 
 
 // NEW
@@ -8,7 +11,7 @@ router.get('/new', (req, res)=>{
     res.render('new.ejs');
 }); // Render the view
 
-//SEED 
+//SEED
 router.get('/home', (req, res) => {
    Product.create(
       [
@@ -39,7 +42,7 @@ router.get('/home', (req, res) => {
             img: '/images/lgbt_pumpkins.JPG',
             price: 15.99,
             quantity: 10
-         },
+         }
       ],
       (error, data) => {
       res.redirect('/');
