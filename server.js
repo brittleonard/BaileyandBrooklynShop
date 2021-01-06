@@ -1,3 +1,4 @@
+
 //___________________
 //Dependencies
 //___________________
@@ -60,7 +61,7 @@ const homePage = require('./controllers/homepage.js');
 app.use('/home/', homePage);
 
 app.get('/' , (req, res) => {
-  res.render('./controllers/app.js');
+  res.render('./controllers/homepage.js');
 });
 
 //___________________

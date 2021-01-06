@@ -7,16 +7,18 @@ body{
    text-align: center;
 }
 img {
-   display: flex;
-   flex-direction: row;
-   flex-flow: wrap;
+   display: grid;
+   grid-template-columns: 1fr auto minmax(100px, 1fr) 1fr;
+   grid-template-rows: 100px repeat(3, auto) 100px;
+   grid-gap: 10px;
    width: 25%;
    border-radius: 2%;
+   margin: 20px;
 }
 .photos {
-   outline: floralwhite;
+   outline: #e4d5d3;
    outline-style: solid;
-   outline-width: 10px;
+   outline-width: 5px;
    border-radius: 3%;
    background-color: white;
 }
@@ -34,9 +36,12 @@ a {
    padding-left: 25px;
 }
 #nav-bar {
-   background-color: #455a64; /*  light pink - #dcc4be;  brand logo color - #eff0e8 */
+   background-color: #455a64; /*  light pink - #dcc4be, #e4d5d3;  brand logo color - #eff0e8 */
    color: #fff;
    padding: 1.5em;
+}
+.modal {
+   display: block;
 }
 .pages {
    color: black;

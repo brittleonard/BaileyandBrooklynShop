@@ -24,10 +24,10 @@ module.exports = [
       price: 15.99,
       quantity: 10
    }, {
-      name: '',
-      description: '',
-      img: '',
-      price: 15.99,
+      name: 'All Hallows Eve Onesie',
+      description: 'Baby onsie with glitter design All Hollows Eve in pumpkin. Display image is in gold glitter but color can also be in black or purple. Can be customized/personalized.',
+      img: '/images/all-hallows-eve.jpg',
+      price: 17.99,
       quantity: 10
     }
 ]
