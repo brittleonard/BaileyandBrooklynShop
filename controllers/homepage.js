@@ -66,7 +66,8 @@ router.get('/home', (req, res) => {
 router.get('/', (req, res)=>{
    Product.find({}, (error, allProducts) => {
       res.render('index.ejs', {
-           products: allProducts
+           products: allProducts,
+           // currentUser: req.session.currentUser
       });
    }); // Render the view
 });
@@ -107,7 +108,8 @@ router.put('/buy/:id', (req, res) => {
 router.get('/:id', (req, res) => {
     Product.findById(req.params.id, (error, foundProduct) => {
          res.render('show.ejs', {
-            product: foundProduct
+            product: foundProduct,
+            // currentUser: req.session.currentUser,
         });
     });
 });

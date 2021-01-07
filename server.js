@@ -60,6 +60,12 @@ app.use('/products/', productsController);
 const homePage = require('./controllers/homepage.js');
 app.use('/home/', homePage);
 
+const userController = require('./controllers/users_controller.js')
+app.use('/users', userController)
+const sessionsController = require('./controllers/sessions_controller.js')
+app.use('/sessions', sessionsController)
+
+
 app.get('/' , (req, res) => {
   res.render('./controllers/homepage.js');
 });
