@@ -37,24 +37,26 @@
                </br>
       </div>
             </br>
-
+            </br>
+            </br>
                   <form action="/products/buy/<%=product.id%>?_method=PUT" method="POST">
                     <input type="submit" id="buyButton" onclick="alert()" value="Buy" />
                  </br>
               </br>
+
+              </br>
                   </form>
                   <form action="/products/<%=product.id%>/edit">
-                    <input type="submit" value="Edit Item">
+                    <input type="submit" value="Customize Item">
                   </form>
                   <% } %>
                   <form action="/products/<%=product.id%>?_method=DELETE" method="POST">
                       <!-- <input type="submit" value="Delete"/> -->
                   </form>
                </br>
-            </br>
       <na class="navBottom">
          <a id="nav" href="/home">Home</a>
-         <a id="nav" href="/products/new">Customize a Onsie</a><br/>
+         <a id="nav" href="/products/new">Customize a Onsie</a>
          <a id="nav" class="pages" href="models/users/new">sign up to recieve emails for new products and upcoming deals!</a></br>
       </nav>
    </body>

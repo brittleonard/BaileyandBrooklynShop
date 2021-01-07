@@ -12,9 +12,8 @@ img {
    grid-template-rows: 100px repeat(3, auto) 100px;
    grid-gap: 10px;
    width: 50%;
-   border-radius: 2%;
+   border-radius: 5%;
    margin: 20px;
-   paddin
 }
 .photos {
    outline: #e4d5d3;
@@ -90,4 +89,5 @@ h2 {
 }
 .showImage {
    background-color: #e4d5d3;
+   display: inline-block;
 }
