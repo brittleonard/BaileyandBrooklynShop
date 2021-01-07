@@ -90,4 +90,5 @@ h2 {
 .showImage {
    background-color: #e4d5d3;
    display: inline-block;
+   width: 75%;
 }
