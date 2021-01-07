@@ -12,7 +12,7 @@
       <div>
          <nav id="nav-bar">
             <a id="nav-bar" class="pages" href="/home/">Home</a>
-            <a id="nav-bar" class="pages" href="">About Us</a>
+            <a id="nav-bar" class="pages" href="/aboutUs/">About Us</a>
             <a id="nav-bar" class="pages" href="/products/">Baby Clothing</a>
             <a id="nav-bar" class="pages" href="">Essentials</a>
             <!-- <a id="nav-bar" class="pages" href="">Toddler/Kids Clothing</a> -->
@@ -34,14 +34,14 @@
                </br>
             </br>
                   <form action="/products/buy/<%=product.id%>?_method=PUT" method="POST">
-                    <input type="submit" onclick="alert()" value="Buy" />
+                    <input type="submit" id="buyButton" onclick="alert()" value="Buy" />
                   </form>
-                  <form action="/products/<%=product.id%>/edit">
-                    <input type="submit" value="Edit Item">
+                  <!-- <form action="/products/<%=product.id%>/edit">
+                    <input type="submit" value="Edit Item"> -->
                   </form>
                   <% } %>
-                  <form action="/products/<%=product.id%>?_method=DELETE" method="POST">
-                     <input type="submit" value="Delete"/>
+                  <!-- <form action="/products/<%=product.id%>?_method=DELETE" method="POST"> -->
+                     <!-- <input type="submit" value="Delete"/> -->
                   </form>
                </br>
             </br>

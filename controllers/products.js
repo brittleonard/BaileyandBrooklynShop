@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Product = require('../models/products.js')
+const about = require('../controllers/about.js')
 
 // NEW
 router.get('/new', (req, res)=>{
@@ -45,6 +46,9 @@ router.get('/seed', (req, res) => {
    });
 });
 
+router.get('/aboutUs', (req, res)=>{
+    res.render('./controllers/about.js');
+}); // Render the view
 
 // GET
 router.get('/', (req, res)=>{

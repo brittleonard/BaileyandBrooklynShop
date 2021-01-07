@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Product = require('../models/products.js')
+const about = require('../models/about.js')
 
 
 
@@ -8,6 +9,11 @@ const Product = require('../models/products.js')
 router.get('/new', (req, res)=>{
     res.render('new.ejs');
 }); // Render the view
+
+router.get('/aboutUs', (req, res)=>{
+    res.render('./controllers/about.js');
+}); // Render the view
+
 
 //SEED
 router.get('/home', (req, res) => {
@@ -96,6 +102,7 @@ router.post('/', (req, res) => {
         res.redirect('/products');
     });
 });
+
 
 // BUY
 router.put('/buy/:id', (req, res) => {

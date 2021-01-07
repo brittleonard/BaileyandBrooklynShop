@@ -65,6 +65,8 @@ app.use('/users', userController)
 const sessionsController = require('./controllers/sessions_controller.js')
 app.use('/sessions', sessionsController)
 
+// const aboutController = require('./controllers/about.js')
+// app.use('/about', aboutController)
 
 app.get('/' , (req, res) => {
   res.render('./controllers/homepage.js');
