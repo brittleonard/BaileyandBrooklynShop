@@ -7,6 +7,16 @@
       <title>Edit Products</title>
    </head>
    <body>
+      <div>
+         <nav id="nav-bar">
+            <a id="nav-bar" class="pages" href="/home/">Home</a>
+            <a id="nav-bar" class="pages" href="">About Us</a>
+            <a id="nav-bar" class="pages" href="/products/">Baby Clothing</a>
+            <a id="nav-bar" class="pages" href="">Essentials</a>
+
+            <!-- <a id="nav-bar" class="pages" href="">Toddler/Kids Clothing</a> -->
+         </nav>
+      </div>
       <h1>Edit Products</h1>
       <form action="/products/<%=product.id%>?_method=PUT" method="POST">
          Name: <input type="text" name="name" value="<%=product.name%> "/><br/>
@@ -14,7 +24,7 @@
          Description: <input type="text" name="Description" value="<%=product.description%> "/><br/>
          <input type="submit" value="Submit Changes">
       </form>
-      <nav>
+      <nav class="navBottom">
          <a id="nav" href="/home">Home</a></br>
          <a id="nav" href="/products/new">Customize a Onsie</a><br/>
       </nav>

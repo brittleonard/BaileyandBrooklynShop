@@ -9,6 +9,16 @@
       <title>Product</title>
    </head>
    <body>
+      <div>
+         <nav id="nav-bar">
+            <a id="nav-bar" class="pages" href="/home/">Home</a>
+            <a id="nav-bar" class="pages" href="">About Us</a>
+            <a id="nav-bar" class="pages" href="/products/">Baby Clothing</a>
+            <a id="nav-bar" class="pages" href="">Essentials</a>
+            <!-- <a id="nav-bar" class="pages" href="">Toddler/Kids Clothing</a> -->
+
+         </nav>
+      </div>
       <h1>Product Page</h1>
       <h3><%=product.name%></h3></br>
             <img src="<%=product.img%>"/></br>
@@ -22,6 +32,7 @@
                <% } %>
                <% if (product.quantity > 0) { %>
                </br>
+            </br>
                   <form action="/products/buy/<%=product.id%>?_method=PUT" method="POST">
                     <input type="submit" onclick="alert()" value="Buy" />
                   </form>
@@ -32,9 +43,12 @@
                   <form action="/products/<%=product.id%>?_method=DELETE" method="POST">
                      <input type="submit" value="Delete"/>
                   </form>
-      <nav>
-         <a id="nav" href="/home">Home</a></br>
+               </br>
+            </br>
+      <na class="navBottom">
+         <a id="nav" href="/home">Home</a>
          <a id="nav" href="/products/new">Customize a Onsie</a><br/>
+         <a id="nav" class="pages" href="">sign up to recieve emails for new products and upcoming deals!</a></br>
       </nav>
    </body>
 </html>

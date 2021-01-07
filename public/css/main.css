@@ -8,7 +8,7 @@ body{
 }
 img {
    display: grid;
-   grid-template-columns: 1fr auto minmax(100px, 1fr) 1fr;
+   grid-template-columns: 100px auto minmax(50px, 100px) 100px;
    grid-template-rows: 100px repeat(3, auto) 100px;
    grid-gap: 10px;
    width: 25%;
@@ -23,6 +23,7 @@ img {
    background-color: white;
 }
 h1 {
+   padding-top: 50px;
    text-align: center;
 }
 .logo {
@@ -34,11 +35,17 @@ h1 {
 a {
    text-decoration: none;
    padding-left: 25px;
+
+
 }
 #nav-bar {
    background-color: #455a64; /*  light pink - #dcc4be, #e4d5d3;  brand logo color - #eff0e8 */
    color: #fff;
    padding: 1.5em;
+}
+#sign-up {
+   display: flex;
+   align-self: flex-end;
 }
 .modal {
    display: block;
@@ -52,9 +59,25 @@ p{
    text-align: center;
 
 }
-
 h2 {
    text-align: center;
    font-size: 16px;
    font-family: fantasy;
+}
+#submit-button {
+   color: black;
+   background-color: #e4d5d3;
+
+}
+#nav {
+   margin-top: auto;
+   display: block;
+   box-sizing: border-box;
+}
+
+.navBottom {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+
 }
