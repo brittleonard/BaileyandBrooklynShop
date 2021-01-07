@@ -19,20 +19,25 @@
 
          </nav>
       </div>
-      <h1>Product Page</h1>
-      <h3><%=product.name%></h3></br>
-            <img src="<%=product.img%>"/></br>
-            <p id="show"><%=product.description%></p></br>
-            <p id="show">$<%=product.price%></p></br>
+
+      <h1></h1>
+      <h3><%=product.name%></h3>
+      <div class='showImage'>
+         </br>
+            <img class='showImage' src="<%=product.img%>"/></br>
+            <p class='showImage' id="show"><%=product.description%></p></br>
+            <p class='showImage' id="show">$<%=product.price%></p></br>
 
                <% if (product.quantity > 0) { %>
-               <p id="show"><%=product.quantity%> available!</p>
+               <p class='showImage' id="show"><%=product.quantity%> available!</p>
                <%  } else { %>
-                  <p id="show">Out of Stock</p>
+                  <p class='showImage' id="show">Out of Stock</p>
                <% } %>
                <% if (product.quantity > 0) { %>
                </br>
+      </div>
             </br>
+
                   <form action="/products/buy/<%=product.id%>?_method=PUT" method="POST">
                     <input type="submit" id="buyButton" onclick="alert()" value="Buy" />
                  </br>
