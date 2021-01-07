@@ -22,6 +22,7 @@ img {
    outline-width: 5px;
    border-radius: 3%;
    background-color: white;
+
 }
 h1 {
    padding-top: 50px;
@@ -36,6 +37,7 @@ h1 {
 a {
    text-decoration: none;
    padding-left: 25px;
+   text-align: center
 
 
 }
@@ -83,7 +85,8 @@ h2 {
 
 }
 #buyButton {
-   background-color: #e4d5d3;
+   background-color: #455a64;
+   color: white;
 }
 .showImage {
    background-color: #e4d5d3;
